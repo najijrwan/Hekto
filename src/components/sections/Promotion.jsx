@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShopNowBtn, } from '@/components/ui/Button.jsx'
+import Button from '@/components/ui/Button.jsx'
 import { Discount, } from '@/assets/icons/index.js';
 
 const Promotion = () => {
@@ -43,7 +43,9 @@ const Promotion = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscingin phasellus non in justo.
                 </p>
 
-                <ShopNowBtn />
+                <Button onClick={() => console.log('Shop now clicked!')}>
+                    Shop Now
+                </Button>
             </div>
 
             <img
