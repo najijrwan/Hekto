@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Search} from '@/assets/icons';
+import { ChevronDown, Search } from '@/assets/icons';
 const NavBar = () => {
 
     const navItems = [
@@ -18,20 +18,20 @@ const NavBar = () => {
             <div className='
             w-full flex items-center'
             >
-                <h1 className='
-                font-primary font-bold text-[34px]'
+                <p className='
+                font-primary font-bold text-[34px] leading-[34px]'
                 >
                     Hekto
-                </h1>
+                </p>
 
                 <ul className='
-                flex gap-[35px] ml-[88px] mr-[227px] 
-                font-secondary font-normal text-button/[20px] '
+                flex gap-[35px] ml-[88px]
+                text-[#0D0E43] font-secondary font-normal text-button/[20px] '
                 >
                     <li>
                         <button className='flex items-center'>
                             <span>Home</span>
-                            <ChevronDown className='text-black'/>
+                            <ChevronDown className='text-black' />
                         </button>
                     </li>
                     {navItems.map((item, idx) => (
@@ -46,7 +46,8 @@ const NavBar = () => {
 
                 <div className='
                 relative
-                w-full h-10 border-2 border-[#E7E6EF] '
+                w-[317px] h-10 ml-auto
+                border-2 border-[#E7E6EF] '
                 >
                     <input
                         type="text"

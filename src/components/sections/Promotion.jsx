@@ -19,24 +19,25 @@ const Promotion = () => {
 
             <div className='
                 absolute top-[203px] left-[375px]
+                flex flex-col items-start gap-3
                 text-left'
             >
 
                 <p className='
-                    mb-3
                     text-accent text-paragraph/[28px] font-secondary font-bold'
                 >
                     Best Furniture For Your Castle....
                 </p>
 
                 <p className='
-                    w-[644px] text-black text-[53px] font-bold font-primary not-italic'
+                    w-[644px]
+                    text-black text-[53px]/[75px] font-primary font-bold not-italic tracking-[1.5%]'
                 >
                     New Furniture Collection Trends in 2020
                 </p>
 
                 <p className='
-                    w-[559px]
+                    w-[560px]
                     text-sub-text text-paragraph/[28px] font-secondary font-bold'
                 >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscingin phasellus non in justo.
