@@ -6,7 +6,7 @@ import FeaturedProducts from '@/components/sections/FeaturedProducts.jsx';
 const MainPage = () => {
     return (
         <main className='
-            flex flex-col justify-center'
+            flex flex-col items-center'
         >
 
             <Promotion />

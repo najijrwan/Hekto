@@ -31,6 +31,7 @@
   --color-page-button: #E0D3F5;
 
   /* Typography */
+  /* Font Family */
   --font-primary: 'Josefin Sans', sans-serif;
   /* Full Typeface */
   --font-secondary: 'Lato', sans-serif;
@@ -54,4 +55,10 @@
 
 body {
   background-color: #FFFFFF;
+}
+
+@layer components {
+  .caption-title {
+    @apply text-caption-title leading-normal font-primary font-bold not-italic;
+  }
 }
