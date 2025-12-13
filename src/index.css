@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --linear-bg: linear-gradient(90deg, #F3F9FF 0%, #F1F0FF 100%);
+  --pink-gradient: linear-gradient(90deg, #FA3BE5 0%, #FF289F 100%);
+  --blue-gradient: linear-gradient(90deg, #1389FF 0%, #1DB4E7 100%);
+  --skyblue-gradient: linear-gradient(90deg, #46D9FF 0%, #19A5F9 100%);
+  --mintgreen-gradient: linear-gradient(90deg, #36E6D5 0%, #29E871 100%);
+  --sub-text-gradient: linear-gradient(90deg, #F3F9FF 0%, #F1F0FF 100%);
+}
+
+@theme {
+  /* Colors */
+  --color-accent: #FB2E86;
+  --color-text-white: #F1F1F1;
+  --colo-navy: #151875;
+  --color-off-navy: #3F509E;
+  --color-purple: #7E33E0;
+  --color-off-purple: #9F63B5;
+  --color-pantone-purple: #E0D3F5;
+  --color-red: #FB2448;
+  --color-blue: #2F1AC4;
+  --color-sky-blue: #F3F9FF;
+
+  --color-text: #151875;
+  --color-section-hover: #2F1AC4;
+  --color-sale-tag: #3F509E;
+  --color-price-tag: #FB2448;
+  --color-sub-text: #8A8FB9;
+  --color-page-button: #E0D3F5;
+
+  /* Typography */
+  --font-primary: 'Josefin Sans', sans-serif;
+  /* Full Typeface */
+  --font-secondary: 'Lato', sans-serif;
+  /* Regular */
+
+  /* Texts Size */
+  --text-list-titles: 22px;
+  --text-paragraph: 16px;
+  --text-list-item: 11px;
+  --text-heading: 28px;
+  --text-big-font: 64px;
+  --text-caption: 14px;
+  --text-button: 16px;
+  --text-price-cut: 12px;
+  --text-caption-title: 42px;
+
+  /* Shadows */
+  --shadow-1: 0 8px 40px 0 rgba(49, 32, 138, 0.05);
+  --shadow-2: 0 4px 89px 0 rgb(126, 51, 224, 0.1)
+}
+
+body {
+  background-color: #FFFFFF;
+}
