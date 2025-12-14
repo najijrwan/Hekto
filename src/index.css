@@ -64,7 +64,7 @@ body {
   }
 
   .paragraph {
-    @apply text-paragraph leading-normal font-secondary font-nomral not-italic;
+    @apply text-paragraph leading-normal font-secondary font-normal not-italic;
   }
 
   .list-item {

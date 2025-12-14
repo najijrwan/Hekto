@@ -2,42 +2,30 @@ import React from 'react';
 
 const featuredProducts = [
     {
-        images: {
-            primary: '/images/product-1-main.png',
-            secondary: '/images/product-1-alt.png',
-            hover: '/images/product-1-hover.png',
-        },
+        image: "src/assets/images/image 1167.png",
         label: 'Cantilever Chair',
+        colors: "",
         code: 'Y523201',
         price: '$42.00',
     },
     {
-        images: {
-            primary: '/images/product-2-main.png',
-            secondary: '/images/product-2-alt.png',
-            hover: '/images/product-2-hover.png',
-        },
+        image: "",
         label: 'Cantilever Chair',
+        colors: "",
         code: 'Y52320',
         price: '$42.00',
     },
     {
-        images: {
-            primary: '/images/product-3-main.png',
-            secondary: '/images/product-3-alt.png',
-            hover: '/images/product-3-hover.png',
-        },
+        image: "",
         label: 'Cantilever Chair',
+        colors: "",
         code: 'Y52320',
         price: '$42.00',
     },
     {
-        images: {
-            primary: '/images/product-4-main.png',
-            secondary: '/images/product-4-alt.png',
-            hover: '/images/product-4-hover.png',
-        },
+        image: "",
         label: 'Cantilever Chair',
+        colors: "",
         code: 'Y52320',
         price: '$42.00',
     },
@@ -61,12 +49,30 @@ const FeaturedProducts = () => {
 
             <ul
                 className='
-                    w-[1168px]
+                    w-[1168px] h-[361px] mb-[5px]
                     flex flex-row justify-between'
             >
                 {featuredProducts.map((product, index) => (
-                    <li key={index}>
-                        {/* product rendering goes here */}
+                    <li
+                        key={index}
+                        className='
+                            w-[270px] '
+                    >
+                        <div
+                            className='
+                                h-[236px] w-full
+                                bg-[#F6F7FB]'
+                        >
+                            <img
+                                src={product.image}
+                                alt="chair"
+                                className='
+                                    mt-[39px] mb-[18px] mx-auto' 
+                            />
+                        </div>
+                        <div>
+
+                        </div>
                     </li>
                 ))}
             </ul>
