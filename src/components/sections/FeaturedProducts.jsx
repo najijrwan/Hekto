@@ -1,30 +1,30 @@
 import React from 'react';
-
+import { CardCart, CardHeart, CardSearchPlus } from '../../assets/icons';
 const featuredProducts = [
     {
         image: "src/assets/images/image 1167.png",
-        label: 'Cantilever Chair',
+        label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y523201',
         price: '$42.00',
     },
     {
         image: "src/assets/images/image 1168.png",
-        label: 'Cantilever Chair',
+        label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
         price: '$42.00',
     },
     {
         image: "src/assets/images/image 1169.png",
-        label: 'Cantilever Chair',
+        label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
         price: '$42.00',
     },
     {
         image: "src/assets/images/image 3.png",
-        label: 'Cantilever Chair',
+        label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
         price: '$42.00',
@@ -56,10 +56,23 @@ const FeaturedProducts = () => {
                     <li
                         key={index}
                         className='
-                            w-[270px]
-                            flex flex-col items-center gap-[15px]
-                            bg-white shadow-1'
+                            relative
+                            w-[270px] h-full
+                            flex flex-col items-center
+                            bg-white shadow-1
+                            cursor-pointer group'
                     >
+
+                        <div 
+                            className='
+                                absolute top-[11px] left-[11px]
+                                hidden flex-row justify-center items-center gap-[16px]
+                                group-hover:flex'
+                        >
+                            <CardCart />
+                            <CardHeart />
+                            <CardSearchPlus />
+                        </div>
 
                         <div
                             className='
@@ -77,12 +90,14 @@ const FeaturedProducts = () => {
 
                         <div
                             className='
-                            flex flex-col items-center justify-center gap-[12px] leading-none'
+                                w-full py-[16px]
+                                flex flex-col items-center justify-center gap-[12px] leading-tight
+                                group-hover:bg-section-hover'
                         >
                             <h1
                                 className='
-                                text-[18px] font-secondary font-bold
-                                text-pink'
+                                    text-[18px] font-secondary font-[600]
+                                    text-pink'
                             >
                                 {product.label}
                             </h1>
