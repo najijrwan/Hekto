@@ -29,6 +29,7 @@
   --color-price-tag: #FB2448;
   --color-sub-text: #8A8FB9;
   --color-page-button: #E0D3F5;
+  --color-pink: #FB2E86;
 
   /* Typography */
   /* Font Family */
@@ -49,53 +50,55 @@
   --text-caption-title: 42px;
 
   /* Shadows */
-  --shadow-1: 0 8px 40px 0 rgba(49, 32, 138, 0.05);
-  --shadow-2: 0 4px 89px 0 rgb(126, 51, 224, 0.1)
+  --shadow-1: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  --shadow-2: 0 8px 40px 0 rgba(49, 32, 138, 0.05);
+  --shadow-3: 0 4px 89px 0 rgba(126, 51, 224, 0.1);
 }
 
 body {
   background-color: #FFFFFF;
 }
 
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer components {
 
   .list-titles {
-    @apply text-list-titles leading-normal font-primary font-semibold not-italic;
+    @apply text-list-titles leading-none font-primary font-semibold not-italic;
   }
 
   .paragraph {
-    @apply text-paragraph leading-normal font-secondary font-normal not-italic;
+    @apply text-paragraph leading-none font-secondary font-normal not-italic;
   }
 
   .list-item {
-    @apply text-list-item leading-normal font-primary font-semibold not-italic;
+    @apply text-list-item leading-none font-primary font-semibold not-italic;
   }
 
   .heading {
-    @apply text-heading leading-normal font-primary font-bold not-italic;
+    @apply text-heading leading-none font-primary font-bold not-italic;
   }
 
   .big-font {
-    @apply text-big-font leading-normal font-primary font-bold not-italic;
+    @apply text-big-font leading-none font-primary font-bold not-italic;
   }
 
   .caption {
-    @apply text-caption leading-normal font-primary font-normal not-italic;
+    @apply text-caption leading-none font-primary font-normal not-italic;
   }
 
   .button {
-    @apply text-button leading-normal font-primary font-semibold not-italic;
+    @apply text-button leading-none font-primary font-semibold not-italic;
   }
 
   .price-cut {
-    @apply text-price-cut leading-normal font-primary font-normal not-italic;
+    @apply text-price-cut leading-none font-primary font-normal not-italic;
   }
 
   .caption-title {
-    @apply text-caption-title leading-normal font-primary font-bold not-italic;
-  }
-
-  .caption-title {
-    @apply text-caption-title leading-normal font-primary font-bold not-italic;
+    @apply text-caption-title leading-none font-primary font-bold not-italic;
   }
 }

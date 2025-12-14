@@ -10,7 +10,7 @@ const Button = ({
 
     const baseStyle = `
     py-[16px] px-[40px] mt-[15px] rounded-[2px]
-    text-[17px] leading-[18px] text-center font-primary font-normal tracking-wide
+    text-[17px] leading-none text-center font-primary font-normal tracking-wide
     transition duration-200
   `;
 
