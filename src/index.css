@@ -58,6 +58,43 @@ body {
 }
 
 @layer components {
+
+  .list-titles {
+    @apply text-list-titles leading-normal font-primary font-semibold not-italic;
+  }
+
+  .paragraph {
+    @apply text-paragraph leading-normal font-secondary font-nomral not-italic;
+  }
+
+  .list-item {
+    @apply text-list-item leading-normal font-primary font-semibold not-italic;
+  }
+
+  .heading {
+    @apply text-heading leading-normal font-primary font-bold not-italic;
+  }
+
+  .big-font {
+    @apply text-big-font leading-normal font-primary font-bold not-italic;
+  }
+
+  .caption {
+    @apply text-caption leading-normal font-primary font-normal not-italic;
+  }
+
+  .button {
+    @apply text-button leading-normal font-primary font-semibold not-italic;
+  }
+
+  .price-cut {
+    @apply text-price-cut leading-normal font-primary font-normal not-italic;
+  }
+
+  .caption-title {
+    @apply text-caption-title leading-normal font-primary font-bold not-italic;
+  }
+
   .caption-title {
     @apply text-caption-title leading-normal font-primary font-bold not-italic;
   }

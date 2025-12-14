@@ -17,7 +17,7 @@ const HeadingBar = () => {
         <header className="
             flex items-center justify-between
             w-full h-11 px-[378.33px]
-            bg-purple text-text-white font-primary text-button font-[400] not-italic
+            bg-purple text-text-white font-primary text-button font-normal not-italic
         ">
 
             <div className="flex items-center gap-12">
