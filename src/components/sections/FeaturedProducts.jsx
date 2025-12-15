@@ -71,17 +71,16 @@ const FeaturedProducts = () => {
                                 group-hover:flex'
                         >
 
-                            <button 
-                                className='
-                                    size-[38px] rounded-full 
-                                    hover:bg-bg-shade hover:text-text cursor-pointer'>
+                            <button className="size-[38px] rounded-full hover:bg-bg-shade cursor-pointer group/button">
                                 <Icon
                                     name="ShoppingCart"
                                     size={24}
                                     gradient={{ from: "#1389FF", to: "#1DB4E7" }}
-                                    className="m-auto"
+                                    className="m-auto flex group-hover/button:stroke-current group-hover/button:text-blue group"
+                                    uniqueId={index}
                                 />
                             </button>
+
 
                         </div>
 

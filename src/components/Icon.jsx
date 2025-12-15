@@ -1,4 +1,3 @@
-// src/components/Icon.jsx
 import * as LucideIcons from "lucide-react";
 
 const Icon = ({
@@ -7,24 +6,33 @@ const Icon = ({
   gradient,
   className = "",
   strokeWidth = 2,
+  uniqueId, // new prop
 }) => {
   const LucideIcon = LucideIcons[name];
   if (!LucideIcon) return null;
 
-  const gradientId = `${name}-gradient`;
+  // ensure unique gradient id per instance
+  const gradientId = `${name}-gradient-${uniqueId || Math.random().toString(36).substr(2, 9)}`;
 
   return (
-    <svg width={size} height={size} className={className} viewBox="0 0 24 24">
+    <>
       {gradient && (
-        <defs>
-          <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
-            <stop stopColor={gradient.from} offset="0%" />
-            <stop stopColor={gradient.to} offset="100%" />
-          </linearGradient>
-        </defs>
+        <svg width="0" height="0">
+          <defs>
+            <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
+              <stop stopColor={gradient.from} offset="0%" />
+              <stop stopColor={gradient.to} offset="100%" />
+            </linearGradient>
+          </defs>
+        </svg>
       )}
-      <LucideIcon stroke={gradient ? `url(#${gradientId})` : "currentColor"} strokeWidth={strokeWidth} />
-    </svg>
+      <LucideIcon
+        size={size}
+        stroke={gradient ? `url(#${gradientId})` : "currentColor"}
+        strokeWidth={strokeWidth}
+        className={className}
+      />
+    </>
   );
 };
 
