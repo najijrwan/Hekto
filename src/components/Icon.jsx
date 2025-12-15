@@ -1,31 +1,30 @@
+// src/components/Icon.jsx
+import * as LucideIcons from "lucide-react";
+
 const Icon = ({
-  as: IconComponent,
+  name,
   size = 24,
-  variant = 'solid',
-  gradientId = 'iconGradient',
-  gradientColors = ['#FB2E86', '#7E33E0'], // <-- new prop
-  className = '',
+  gradient,
+  className = "",
+  strokeWidth = 2,
 }) => {
-  if (variant === 'gradient') {
-    return (
-      <span className={`inline-flex items-center justify-center ${className}`}>
-        <svg width={size} height={size} >
-          <defs>
-            <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor={gradientColors[0]} />
-              <stop offset="100%" stopColor={gradientColors[1]} />
-            </linearGradient>
-          </defs>
-          <IconComponent width={size} height={size} fill={`url(#${gradientId})`} />
-        </svg>
-      </span>
-    );
-  }
+  const LucideIcon = LucideIcons[name];
+  if (!LucideIcon) return null;
+
+  const gradientId = `${name}-gradient`;
 
   return (
-    <span className={`inline-flex items-center justify-center ${className}`}>
-      <IconComponent fill="currentColor" />
-    </span>
+    <svg width={size} height={size} className={className} viewBox="0 0 24 24">
+      {gradient && (
+        <defs>
+          <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
+            <stop stopColor={gradient.from} offset="0%" />
+            <stop stopColor={gradient.to} offset="100%" />
+          </linearGradient>
+        </defs>
+      )}
+      <LucideIcon stroke={gradient ? `url(#${gradientId})` : "currentColor"} strokeWidth={strokeWidth} />
+    </svg>
   );
 };
 

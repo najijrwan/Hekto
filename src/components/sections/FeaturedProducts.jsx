@@ -1,6 +1,5 @@
 import React from 'react';
-import Icon from '@/components/Icon';
-import { CardCart, CardHeart, CardSearchPlus} from '@/assets/icons';
+import Icon from '@/components/Icon.jsx'
 
 const featuredProducts = [
     {
@@ -71,30 +70,19 @@ const FeaturedProducts = () => {
                                 hidden flex-row justify-center items-center
                                 group-hover:flex'
                         >
-                            <Icon
-                                as={CardCart}
-                                size={13.85}
-                                variant="gradient"
-                                gradientId="cart-gradient-1"
-                                gradientColors={['#1389FF', '#1DB4E7']}
-                                className="size-[30px] hover:bg-bg-shade rounded-full"
-                            />
-                            <Icon
-                                as={CardHeart}
-                                size={14}
-                                variant="gradient"
-                                gradientId="cart-gradient-1"
-                                gradientColors={['#1389FF', '#1DB4E7']}
-                                className="size-[30px] hover:bg-bg-shade rounded-full"
-                            />
-                            <Icon
-                                as={CardSearchPlus}
-                                size={12.5}
-                                variant="gradient"
-                                gradientId="cart-gradient-1"
-                                gradientColors={['#1389FF', '#1DB4E7']}
-                                className="size-[30px] hover:bg-bg-shade rounded-full"
-                            />
+
+                            <button 
+                                className='
+                                    size-[38px] rounded-full 
+                                    hover:bg-bg-shade hover:text-text cursor-pointer'>
+                                <Icon
+                                    name="ShoppingCart"
+                                    size={24}
+                                    gradient={{ from: "#1389FF", to: "#1DB4E7" }}
+                                    className="m-auto"
+                                />
+                            </button>
+
                         </div>
 
                         <div
