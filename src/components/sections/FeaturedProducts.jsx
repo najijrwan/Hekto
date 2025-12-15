@@ -3,28 +3,28 @@ import Icon from '@/components/Icon.jsx'
 
 const featuredProducts = [
     {
-        image: "src/assets/images/image 1167.png",
+        images: ["src/assets/images/image 1167.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y523201',
         price: '$42.00',
     },
     {
-        image: "src/assets/images/image 1168.png",
+        images: ["src/assets/images/image 1168.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
         price: '$42.00',
     },
     {
-        image: "src/assets/images/image 1169.png",
+        images: ["src/assets/images/image 1169.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
         price: '$42.00',
     },
     {
-        image: "src/assets/images/image 3.png",
+        images: ["src/assets/images/image 3.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y52320',
@@ -71,15 +71,20 @@ const FeaturedProducts = () => {
                                 group-hover:flex'
                         >
 
-                            <button className="size-[38px] rounded-full hover:bg-bg-shade cursor-pointer group/button">
-                                <Icon
-                                    name="ShoppingCart"
-                                    size={24}
-                                    gradient={{ from: "#1389FF", to: "#1DB4E7" }}
-                                    className="m-auto flex group-hover/button:stroke-current group-hover/button:text-blue group"
-                                    uniqueId={index}
-                                />
-                            </button>
+                            {["ShoppingCart", "Heart", "Search"].map((iconName, i) => (
+                                <button
+                                    key={i}
+                                    className="size-[30px] rounded-full hover:bg-bg-shade cursor-pointer group/button"
+                                >
+                                    <Icon
+                                        name={iconName}
+                                        size={18}
+                                        gradient={{ from: "#1389FF", to: "#1DB4E7" }}
+                                        className="m-auto flex group-hover/button:stroke-current group-hover/button:text-blue transition-colors"
+                                        uniqueId={`${index}-${i}`} // ensures gradient IDs are unique per card+icon
+                                    />
+                                </button>
+                            ))}
 
 
                         </div>
@@ -91,10 +96,18 @@ const FeaturedProducts = () => {
                                 bg-[#F6F7FB] group-hover:bg-[#F7F7F7]'
                         >
                             <img
-                                src={product.image}
+                                src={product.images[0]}
                                 alt="chair"
                                 className='
-                                    mt-[40px] mb-[20px] mx-auto'
+                                    mt-[40px] mb-[20px] mx-auto
+                                    block group-hover:hidden'
+                            />
+                            <img
+                                src={product.images[1]}
+                                alt="chair"
+                                className='
+                                    mt-[40px] mb-[20px] mx-auto
+                                    hidden group-hover:block'
                             />
                         </div>
 
