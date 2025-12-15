@@ -12,6 +12,7 @@
 
 @theme {
   /* Colors */
+  --color-bg-shade: #EEEFFB;
   --color-accent: #FB2E86;
   --color-text-white: #F1F1F1;
   --colo-navy: #151875;

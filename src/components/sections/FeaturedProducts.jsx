@@ -1,5 +1,7 @@
 import React from 'react';
-import { CardCart, CardHeart, CardSearchPlus } from '../../assets/icons';
+import Icon from '@/components/Icon';
+import { Cart, Heart } from '@/assets/icons';
+
 const featuredProducts = [
     {
         image: "src/assets/images/image 1167.png",
@@ -69,16 +71,21 @@ const FeaturedProducts = () => {
                                 hidden flex-row justify-center items-center gap-[16px]
                                 group-hover:flex'
                         >
-                            <CardCart />
-                            <CardHeart />
-                            <CardSearchPlus />
+                            <Icon
+                                as={Cart}
+                                size={24}
+                                variant="gradient"
+                                gradientId="cart-gradient-1"
+                                gradientColors={['#1389FF', '#1DB4E7']}
+                                className="size-[24px] hover:bg-bg-shade rounded-full"
+                            />
                         </div>
 
                         <div
                             className='
                                 w-full h-[236px]
                                 flex items-end
-                                bg-[#F6F7FB] group-hover:bg-[#F1F1F7]'
+                                bg-[#F6F7FB] group-hover:bg-[#F7F7F7]'
                         >
                             <img
                                 src={product.image}
