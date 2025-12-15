@@ -63,7 +63,7 @@ const FeaturedProducts = () => {
                             cursor-pointer group'
                     >
 
-                        <div 
+                        <div
                             className='
                                 absolute top-[11px] left-[11px]
                                 hidden flex-row justify-center items-center gap-[16px]
@@ -78,7 +78,7 @@ const FeaturedProducts = () => {
                             className='
                                 w-full h-[236px]
                                 flex items-end
-                                bg-[#F6F7FB]'
+                                bg-[#F6F7FB] group-hover:bg-[#F1F1F7]'
                         >
                             <img
                                 src={product.image}
@@ -90,14 +90,14 @@ const FeaturedProducts = () => {
 
                         <div
                             className='
-                                w-full py-[16px]
-                                flex flex-col items-center justify-center gap-[12px] leading-tight
+                                w-full h-[125px] py-[16px]
+                                flex flex-col items-center justify-center gap-[12px]
                                 group-hover:bg-section-hover'
                         >
                             <h1
                                 className='
-                                    text-[18px] font-secondary font-[600]
-                                    text-pink'
+                                    text-[18px] leading-[22px] font-secondary font-[600]
+                                    text-pink group-hover:text-white'
                             >
                                 {product.label}
                             </h1>
@@ -114,16 +114,16 @@ const FeaturedProducts = () => {
 
                             <p
                                 className='
-                                text-[14px] font-primary font-normal not-italic
-                                text-text'
+                                text-[14px] leading-none font-primary font-normal not-italic
+                                text-text group-hover:text-white'
                             >
                                 Code - {product.code}
                             </p>
 
                             <p
                                 className='
-                                text-[14px] font-secondary font-normal
-                                text-text'
+                                text-[14px] leading-[17px] font-secondary font-normal
+                                text-text group-hover:text-white'
                             >
                                 {product.price}
                             </p>
