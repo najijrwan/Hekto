@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from '@/components/Icon';
-import { Cart, Heart } from '@/assets/icons';
+import { CardCart, CardHeart, CardSearchPlus} from '@/assets/icons';
 
 const featuredProducts = [
     {
@@ -68,16 +68,32 @@ const FeaturedProducts = () => {
                         <div
                             className='
                                 absolute top-[11px] left-[11px]
-                                hidden flex-row justify-center items-center gap-[16px]
+                                hidden flex-row justify-center items-center
                                 group-hover:flex'
                         >
                             <Icon
-                                as={Cart}
-                                size={24}
+                                as={CardCart}
+                                size={13.85}
                                 variant="gradient"
                                 gradientId="cart-gradient-1"
                                 gradientColors={['#1389FF', '#1DB4E7']}
-                                className="size-[24px] hover:bg-bg-shade rounded-full"
+                                className="size-[30px] hover:bg-bg-shade rounded-full"
+                            />
+                            <Icon
+                                as={CardHeart}
+                                size={14}
+                                variant="gradient"
+                                gradientId="cart-gradient-1"
+                                gradientColors={['#1389FF', '#1DB4E7']}
+                                className="size-[30px] hover:bg-bg-shade rounded-full"
+                            />
+                            <Icon
+                                as={CardSearchPlus}
+                                size={12.5}
+                                variant="gradient"
+                                gradientId="cart-gradient-1"
+                                gradientColors={['#1389FF', '#1DB4E7']}
+                                className="size-[30px] hover:bg-bg-shade rounded-full"
                             />
                         </div>
 

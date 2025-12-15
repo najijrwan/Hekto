@@ -9,7 +9,7 @@ const Icon = ({
   if (variant === 'gradient') {
     return (
       <span className={`inline-flex items-center justify-center ${className}`}>
-        <svg width={size} height={size}>
+        <svg width={size} height={size} >
           <defs>
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor={gradientColors[0]} />
