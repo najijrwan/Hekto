@@ -54,15 +54,15 @@ const FeaturedProductCard = ({ product, index }) => {
                     src={product.images[0]}
                     alt={product.label}
                     className="
-                         absolute bottom-5 left-1/2 -translate-x-1/2 
-                         opacity-100 group-hover:opacity-0 transition-opacity duration-300"
+                         absolute bottom-5 left-1/2 -translate-x-1/2 scale-100 group-hover:scale-110
+                         opacity-100 group-hover:opacity-0 transition-all duration-300 ease-in"
                 />
                 <img
                     src={product.images[1]}
                     alt={product.label}
                     className="
-                         absolute bottom-5 left-1/2 -translate-x-1/2 
-                         opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         absolute bottom-5 left-1/2 -translate-x-1/2 scale-110 group-hover:scale-100
+                         opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
                 />
 
             </div>
@@ -73,7 +73,7 @@ const FeaturedProductCard = ({ product, index }) => {
                     w-full h-[125px] py-[16px]
                     flex flex-col items-center justify-center gap-[12px]
                     group-hover:bg-section-hover 
-                    transtion-all duration-300 "
+                    transtion-all duration-300 ease-in"
             >
 
                 <h1
