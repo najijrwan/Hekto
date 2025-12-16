@@ -1,8 +1,7 @@
 import React from "react";
 import Promotion from '@/components/sections/Promotion.jsx';
 import FeaturedProducts from '@/components/sections/FeaturedProducts.jsx';
-
-
+import LatestProducts from "../components/sections/LatestProducts";
 
 const MainPage = () => {
     return (
@@ -12,7 +11,8 @@ const MainPage = () => {
 
             <Promotion />
             <FeaturedProducts title = "Featured Products" />
-
+            <LatestProducts title = "Latest Products" />
+            
         </main>
     );
 };
