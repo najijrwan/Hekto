@@ -1,5 +1,6 @@
 import React from 'react';
-import FeaturedProductCard from '@/components/ui/cards/FeaturedProductCard';
+
+import FeaturedProductCard from '@cards/FeaturedProductCard.jsx';
 
 const featuredProducts = [
     {
@@ -32,7 +33,7 @@ const featuredProducts = [
     },
 ];
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({ title }) => {
     return (
         <section
             className='
@@ -45,7 +46,7 @@ const FeaturedProducts = () => {
                     text-[#1A0B5B]
                     caption-title '
             >
-                Featured Products
+                {title}
             </h1>
 
             <ul

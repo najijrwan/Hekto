@@ -1,5 +1,5 @@
-import Icon from '../../Icon.jsx';
-import { PRODUCT_ACTION_ICONS } from '@/components/ui/cards/constants.js';
+import Icon from '@components/Icon.jsx';
+import { PRODUCT_ACTION_ICONS } from '@cards/constants.js';
 const ProductActions = ({ productIndex }) => {
     return (
         <div

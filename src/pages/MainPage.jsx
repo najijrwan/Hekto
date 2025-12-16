@@ -3,6 +3,7 @@ import Promotion from '@/components/sections/Promotion.jsx';
 import FeaturedProducts from '@/components/sections/FeaturedProducts.jsx';
 
 
+
 const MainPage = () => {
     return (
         <main className='
@@ -10,7 +11,7 @@ const MainPage = () => {
         >
 
             <Promotion />
-            <FeaturedProducts />
+            <FeaturedProducts title = "Featured Products" />
 
         </main>
     );
