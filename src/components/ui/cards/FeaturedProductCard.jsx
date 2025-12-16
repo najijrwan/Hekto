@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from '@/components/Icon.jsx'
-import { PRODUCT_ACTION_ICONS } from './constants';
+import ProductActions from '@/components/ui/product/ProductActions';
 
 const FeaturedProductCard = ({ product, index }) => {
     return (
@@ -12,34 +12,8 @@ const FeaturedProductCard = ({ product, index }) => {
                 bg-white shadow-1
                 cursor-pointer group "
         >
-            {/* Hover icons */}
-            <div
-                className="
-                    absolute top-[11px] left-[11px] -translate-y-1/2 group-hover:translate-y-0 z-20
-                    flex flex-row justify-center items-center
-                    opacity-0 group-hover:opacity-100 transition-all duration-300"
-            >
-                {PRODUCT_ACTION_ICONS.map((iconName, i) => (
-                    <button
-                        key={i}
-                        className="
-                            size-[30px] rounded-full 
-                            hover:bg-bg-shade
-                            cursor-pointer group/button"
-                    >
-                        <Icon
-                            name={iconName}
-                            size={18}
-                            gradient={{ from: "#1389FF", to: "#1DB4E7" }}
-                            className="
-                                m-auto 
-                                flex 
-                                group-hover/button:stroke-current group-hover/button:text-blue "
-                            uniqueId={`${index}-${i}`}
-                        />
-                    </button>
-                ))}
-            </div>
+            {/* Product Buttons */}
+            <ProductActions productIndex={index} />
 
             {/* Image */}
             <div
@@ -49,7 +23,7 @@ const FeaturedProductCard = ({ product, index }) => {
                     flex items-end 
                     bg-[#F6F7FB] group-hover:bg-[#F7F7F7] "
             >
-                
+
                 <img
                     src={product.images[0]}
                     alt={product.label}
