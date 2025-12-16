@@ -15,7 +15,7 @@ const FeaturedProductCard = ({ product, index }) => {
             {/* Hover icons */}
             <div
                 className="
-                    absolute top-[11px] left-[11px] -translate-y-1/2 group-hover:translate-y-0
+                    absolute top-[11px] left-[11px] -translate-y-1/2 group-hover:translate-y-0 z-20
                     flex flex-row justify-center items-center
                     opacity-0 group-hover:opacity-100 transition-all duration-300"
             >
