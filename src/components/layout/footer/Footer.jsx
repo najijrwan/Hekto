@@ -2,6 +2,39 @@ import React from 'react';
 import { company } from '@data/company.js';
 import SocialLinks from "@footer/SocialLinks.jsx";
 
+const lists = [
+    {
+        title: "Catagories",
+        items: [
+            "Laptops & Computers",
+            "Cameras & Photography",
+            "Smart Phones & Tablets",
+            "Video Games & Consoles",
+            "Waterproof Headphones",
+        ]
+    },
+    {
+        title: "Customer Care",
+        items: [
+            "My Account",
+            "Discount",
+            "Returns",
+            "Orders History",
+            "Order Tracking",
+        ]
+    },
+    {
+        title: "Pages",
+        items: [
+            "Blog",
+            "Browse the Shop",
+            "Category",
+            "Pre-Built Pages",
+            "Visual Composer Elements",
+            "WooCommerce Pages",
+        ]
+    },
+]
 
 const Footer = () => {
 
@@ -13,9 +46,48 @@ const Footer = () => {
 
             <section
                 className="
-                    w-full h-full
+                    w-full h-full py-[94px]
+                    flex items-start justify-center gap-[70px]
                     bg-bg-shade">
-                test
+
+                <div
+                    className='
+                        flex flex-col items-center justify-center gap-[20px]'
+                >
+
+                    <header
+                        className='
+                            font-primary font-bold text-[34px] leading-[34px]'
+                    >
+                        Hekto
+                    </header>
+                    <div 
+                        className='
+                            w-p'>
+
+                    </div>
+                </div>
+
+                {lists.map((list, i) => (
+                    <div
+                        key={i}
+                        className='
+                        flex flex-col items-start justify-start'
+                    >
+
+                        <header className='list-titles mb-[42px] text-black'>
+                            {list.title}
+                        </header>
+                        <ul className='paragraph flex flex-col gap-[20px]'>
+                            {list.items.map((item, idx) => (
+                                <li key={idx}>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+
+                    </div>
+                ))}
             </section>
 
             <section

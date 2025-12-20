@@ -72,7 +72,7 @@ body {
   }
 
   .paragraph {
-    @apply text-paragraph leading-none font-secondary font-normal not-italic;
+    @apply text-sub-text text-paragraph leading-none font-secondary font-normal not-italic;
   }
 
   .list-item {
