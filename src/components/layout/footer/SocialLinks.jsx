@@ -8,7 +8,7 @@ const SocialLinks = ({ links, size = 13 }) => (
           rel="noopener noreferrer"
           className="
             size-[20px] rounded-full
-            flex items-center justify-center
+            flex items-center justify-center gap-[11px]
             bg-text text-white
           "
         >
