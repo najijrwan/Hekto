@@ -1,6 +1,7 @@
 import React from 'react';
 import { company } from '@data/company.js';
 import SocialLinks from "@footer/SocialLinks.jsx";
+import Button from '@/components/ui/Button.jsx'
 
 const lists = [
     {
@@ -41,12 +42,12 @@ const Footer = () => {
     return (
         <footer
             className="
-                w-full h-[532px]"
+                w-full"
         >
 
             <section
                 className="
-                    w-full h-full py-[94px]
+                    w-full h-[480px] py-[94px]
                     flex items-start justify-center gap-[70px]
                     bg-bg-shade">
 
@@ -61,10 +62,31 @@ const Footer = () => {
                     >
                         Hekto
                     </header>
-                    <div 
+                    <div
                         className='
-                            w-p'>
-
+                            relative
+                            w-[377px] h-[44px] rounded-[3px]
+                            bg-white '
+                    >
+                        <input
+                            type="text"
+                            placeholder='Enter Email Address'
+                            className='
+                                w-full h-full pl-[20px] 
+                                opacity-45
+                                placeholder:text-sub-text placeholder:text-paragraph placeholder:font-secondary
+                                placeholder:font-normal placeholder:not-italic placeholder:leading-normal
+                                outline-0'
+                        />
+                        <button
+                            className='
+                                absolute right-0
+                                w-[135px] h-[40px] my-[2px] rounded-[3px]
+                                text-button text-center font-primary font-medium leading-normal
+                                bg-accent text-bg-shade'
+                        >
+                            Sign Up
+                        </button>
                     </div>
                 </div>
 
