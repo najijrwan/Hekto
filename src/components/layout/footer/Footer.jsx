@@ -53,7 +53,7 @@ const Footer = () => {
 
                 <div
                     className='
-                        flex flex-col items-center justify-center gap-[20px]'
+                        flex flex-col items-start justify-center gap-[20px]'
                 >
 
                     <header
@@ -88,6 +88,10 @@ const Footer = () => {
                             Sign Up
                         </button>
                     </div>
+
+                    <a href="#" className='paragraph'>Contact Info</a>
+                    <a href="#" className='paragraph'>17 Princess Road, London, Greater London NW1 8JR, UK</a>
+
                 </div>
 
                 {lists.map((list, i) => (
