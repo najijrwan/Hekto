@@ -1,7 +1,6 @@
 import React from 'react';
 import { company } from '@data/company.js';
 import SocialLinks from "@footer/SocialLinks.jsx";
-import Button from '@/components/ui/Button.jsx'
 
 const lists = [
     {
