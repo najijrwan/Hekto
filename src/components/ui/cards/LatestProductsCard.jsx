@@ -6,8 +6,12 @@ const LatestProductsCard = ({ product, index }) => {
             className="
                 w-[360px] h-[306px]"
         >
-            <div>
-                <img src={product.image} alt="Chair" />
+            <div className=" w-full h-[280px] ">
+                <img
+                    src={product.image}
+                    alt="Chair"
+                    className={`${index === 2 ? 'w-full h-[250px] object-contain' : ''} `}
+                />
             </div>
             <div
                 className="

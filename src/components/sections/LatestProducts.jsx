@@ -41,7 +41,7 @@ const latestProducts = [
                 label: "Comfort Handy Craft",
                 discountPrice: "$42.00",
                 price: "$65.00",
-                image: "src/assets/images/image 3.png",
+                image: "src/assets/images/image 3-1.png",
             },
         ],
     },
