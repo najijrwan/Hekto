@@ -1,13 +1,19 @@
 
 
-const LatestProductsCard = ({ product, index}) => {
-    return(
-        <li 
+const LatestProductsCard = ({ product, index }) => {
+    return (
+        <li
             className="
-                "
+                w-[360px] h-[306px]"
         >
-            {product.label}
-            <img src={product.image} alt="" />
+            <div>
+                <img src={product.image} alt="Chair" />
+            </div>
+            <div>
+                {product.label}
+                {product.discountPrice}
+                {product.price}
+            </div>
         </li>
     );
 }
