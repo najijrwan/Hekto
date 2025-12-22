@@ -4,13 +4,18 @@ const LatestProductsCard = ({ product, index }) => {
     return (
         <li
             className="
-                w-[360px] h-[306px]"
+                w-[360px] h-[306px]
+                flex flex-col gap-[16px]"
         >
-            <div className=" w-full h-[280px] ">
+            <div
+                className="
+                    flex items-center justify-center
+                    w-full h-[270px]"
+            >
                 <img
                     src={product.image}
                     alt="Chair"
-                    className={`${index === 2 ? 'w-full h-[250px] object-contain' : ''} `}
+                    className={``}
                 />
             </div>
             <div
@@ -20,7 +25,7 @@ const LatestProductsCard = ({ product, index }) => {
             >
                 <p className="text-[16px] text-text">{product.label}</p>
                 <p className="text-[14px] text-text ml-auto">{product.discountPrice}</p>
-                <p className="text-[12px] text-red line-through">{product.price}</p>
+                <p className="text-[12px] text-red line-through mr-[17px]">{product.price}</p>
             </div>
         </li>
     );
