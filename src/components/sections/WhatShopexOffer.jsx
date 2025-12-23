@@ -1,10 +1,37 @@
 
+const offers = [
+    {
+        id: "freeDelivery",
+        img: "src/assets/images/free-delivery.png",
+        title: "Free Delivery",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+    },
+    {
+        id: "cashback",
+        img: "src/assets/images/cashback.png",
+        title: "Cashback",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+    },
+    {
+        id: "premiumQuality",
+        img: "src/assets/images/premium-quality.png",
+        title: "Premium Quality",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+    },
+    {
+        id: "24-hours-support",
+        img: "src/assets/images/24h-support.png",
+        title: "24/7 Support",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+    },
+];
 
 const WhatShopexOffer = ({ title }) => {
     return (
         <section
             className="
                 relative
+                mt-[58px]
                 flex flex-col items-start gap-[60px]">
 
             <header className="caption-title text-text">
@@ -16,20 +43,29 @@ const WhatShopexOffer = ({ title }) => {
                     className="
                         flex flex-row gap-[23px]"
                 >
-                    <li
-                        className="
-                            w-[270px] h-[320px] py-[45px] px-[27px]
-                            flex flex-col items-center justify-center">
-                        <h1>24/7 Support</h1>
-                        <p
+                    {offers.map((offer) => (
+                        <li
+                            key={offer.id}
                             className="
-                                w-[217px] h-[85px]
-                                text-paragraph/[26.5] text-center font-primary font-bold
-                                text-[#1A0B5B] opacity-30"
+                                w-[270px] h-[320px] px-[26px]
+                                flex flex-col items-center justify-center gap-[27px]
+                                text-center"
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
-                        </p>
-                    </li>
+                            <img
+                                src={offer.img}
+                                alt="Free Delivery"
+                            />
+                            <div>
+                                <header className="list-titles mb-[20px]">
+                                    {offer.title}
+                                </header>
+                                <p className="
+                                    text-[#1A0B5B] opacity-30 text-paragraph/[26.5px] font-secondary font-bold ">
+                                    {offer.text}
+                                </p>
+                            </div>
+                        </li>
+                    ))}
                 </ul>
             </main>
         </section>

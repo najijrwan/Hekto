@@ -68,7 +68,7 @@ body {
 @layer components {
 
   .list-titles {
-    @apply text-list-titles leading-none font-primary font-semibold not-italic;
+    @apply text-text text-list-titles leading-none font-primary font-semibold not-italic;
   }
 
   .paragraph {
