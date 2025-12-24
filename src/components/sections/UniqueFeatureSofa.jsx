@@ -17,15 +17,15 @@ const UniqueFeatureSofa = ({ title }) => {
             <div className="flex flex-col justify-center gap-[13px]">
                 <header
                     className="
-                        text-[35px] leading-[1.32] tracking-[1.5%] font-primary font-bold not-italic
-                        text-text mb-[16px]"
+                        text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic
+                        text-text mb-[16px] w-[543px]"
                 >
-                    Unique Features Of leatest &
-                    Trending Poducts
+                    Unique Features Of leatest & Trending Poducts
                 </header>
 
                 <div 
                     className="
+                        w-[461px]
                         flex flex-col gap-[13px]
                         text-[#ACABC3] text-[16px] leading-[1.32] tracking-[1.5%] font-secondary font-medium">
                     <p>
@@ -48,14 +48,14 @@ const UniqueFeatureSofa = ({ title }) => {
                 <div className="flex items-center gap-[19px] mt-[25px]">
                     <button
                         className="
-                            py-[14px] px-[24px] rounded-[2px] bg-accent
-                            text-[17px] text-white leading-normal tracing-[2%] font-primary font-semibold not-italic">
+                            w-[147px] h-[45px] rounded-[2px] bg-accent
+                            text-[17px] text-white leading-normal tracking-[0.02em] font-primary font-semibold not-italic">
                         Add To Cart
                     </button>
-                    <div className="flex flex-col gap-[3px]">
+                    <div className="flex flex-col gap-[3px] align-top">
                         <p
                             className="
-                                text-[14px] text-text leading-normal tracking-[2%] font-primary font-semibold not-italic"
+                                text-[14px] text-text leading-normal tracking-[0.02em] font-primary font-semibold not-italic"
                         >
                             B&B Italian Sofa
                         </p>
