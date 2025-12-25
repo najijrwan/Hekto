@@ -1,10 +1,10 @@
-
+import Button from '@ui/Button.jsx';
 
 const UniqueFeatureSofa = ({ title }) => {
     return (
         <section
             className="
-                w-full h-[560px] py-[15px] px-[435px] mb-[132px]
+                w-full h-[579px] py-[15px] px-[435px] mb-[132px]
                 flex
                 bg-[#F1F0FF]">
 
@@ -23,33 +23,33 @@ const UniqueFeatureSofa = ({ title }) => {
                     Unique Features Of leatest & Trending Poducts
                 </header>
 
-                <div 
+                <div
                     className="
                         w-[461px]
                         flex flex-col gap-[13px]
                         text-[#ACABC3] text-[16px] leading-[1.32] tracking-[1.5%] font-secondary font-medium">
-                    <p>
-                        <span className="inline-block size-[11px] bg-[#F52B70] rounded-full"></span>
-                        <span className="pl-[12px]">All frames constructed with hardwood solids and laminates</span>
+                    <p className="flex gap-[12px]">
+                        <span className="mt-[7px] size-[11px] shrink-0 bg-[#F52B70] rounded-full"></span>
+                        <span>All frames constructed with hardwood solids and laminates</span>
                     </p>
-                    <p className="leading-[1.75]">
-                        <span className="inline-block size-[11px] bg-[#2B2BF5] rounded-full"></span>
-                        <span className="pl-[12px]">
+                    <p className="flex gap-[12px] leading-[1.75]">
+                        <span className="mt-[7px] size-[11px] shrink-0 bg-[#2B2BF5] rounded-full"></span>
+                        <span>
                             Reinforced with double wood dowels, glue, screw - nails corner
                             blocks and machine nails
                         </span>
                     </p>
-                    <p>
-                        <span className="inline-block size-[11px] bg-[#2BF5CC] rounded-full"></span>
-                        <span className="pl-[12px]">Arms, backs and seats are structurally reinforced</span>
+                    <p className="flex gap-[12px]">
+                        <span className="mt-[7px] size-[11px] shrink-0 bg-[#2BF5CC] rounded-full"></span>
+                        <span>Arms, backs and seats are structurally reinforced</span>
                     </p>
                 </div>
 
                 <div className="flex items-center gap-[19px] mt-[25px]">
                     <button
                         className="
-                            w-[147px] h-[45px] rounded-[2px] bg-accent
-                            text-[17px] text-white leading-normal tracking-[0.02em] font-primary font-semibold not-italic">
+                            w-[157px] h-[45px] rounded-[2px] bg-accent
+                            text-[17px] text-white align-top leading-normal tracking-[0.02em] font-primary font-[200] not-italic">
                         Add To Cart
                     </button>
                     <div className="flex flex-col gap-[3px] align-top">

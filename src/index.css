@@ -62,7 +62,7 @@ body {
 
 /* For Chrome, Safari, and Edge */
 ::-webkit-scrollbar {
-
+  display: none;
 }
 
 @layer components {
