@@ -2,29 +2,29 @@ import TrendingProductsCard from "@cards/TrendingProductsCard.jsx";
 const trendingProducts = [
     {
         id: 0,
-        Label: "Cantilever chair",
+        label: "Cantilever chair",
         image: "src/assets/images/image 1171.png",
         discountPrice: 26,
         price: 42,
     },
     {
         id: 1,
-        Label: "Cantilever chair",
+        label: "Cantilever chair",
         image: "src/assets/images/image 1170.png",
         discountPrice: 26,
         price: 42,
     },
     {
         id: 2,
-        Label: "Cantilever chair",
+        label: "Cantilever chair",
         image: "src/assets/images/image 31.png",
         discountPrice: 26,
         price: 42,
     },
     {
         id: 3,
-        Label: "Cantilever chair",
-        image: "src/assets/images/image 32.png",
+        label: "Cantilever chair",
+        image: "src/assets/images/image 32-1.png",
         discountPrice: 26,
         price: 42,
     },
@@ -42,7 +42,7 @@ const TrendingProducts = ({ title }) => {
 
             <div 
                 className="
-                    flex ">
+                    flex gap-[30px]">
                 {trendingProducts.map((product) => (
                     <TrendingProductsCard
                         key={product.id}
