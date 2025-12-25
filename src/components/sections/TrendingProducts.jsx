@@ -1,37 +1,63 @@
 import TrendingProductsCard from "@cards/TrendingProductsCard.jsx";
-const trendingProducts = [
-    {
-        id: 0,
-        label: "Cantilever chair",
-        image: "src/assets/images/image 1171.png",
-        discountPrice: 26,
-        price: 42,
-    },
-    {
-        id: 1,
-        label: "Cantilever chair",
-        image: "src/assets/images/image 1170.png",
-        discountPrice: 26,
-        price: 42,
-    },
-    {
-        id: 2,
-        label: "Cantilever chair",
-        image: "src/assets/images/image 31.png",
-        discountPrice: 26,
-        price: 42,
-    },
-    {
-        id: 3,
-        label: "Cantilever chair",
-        image: "src/assets/images/image 32-1.png",
-        discountPrice: 26,
-        price: 42,
-    },
-]
+
+const trendingProducts = {
+    list1: [
+        {
+            id: 0,
+            label: "Cantilever chair",
+            image: "src/assets/images/image 1171.png",
+            discountPrice: 26,
+            price: 42,
+        },
+        {
+            id: 1,
+            label: "Cantilever chair",
+            image: "src/assets/images/image 1170.png",
+            discountPrice: 26,
+            price: 42,
+        },
+        {
+            id: 2,
+            label: "Cantilever chair",
+            image: "src/assets/images/image 31.png",
+            discountPrice: 26,
+            price: 42,
+        },
+        {
+            id: 3,
+            label: "Cantilever chair",
+            image: "src/assets/images/image 32-1.png",
+            discountPrice: 26,
+            price: 42,
+        },
+    ],
+    list2: [
+        {
+            id: 0,
+            image: "src/assets/images/image 30.png",
+            label: "Executive Seat chair",
+            priceCut: 32,
+        },
+        {
+            id: 1,
+            image: "src/assets/images/image 19.png",
+            label: "Executive Seat chair",
+            priceCut: 32,
+        },
+        {
+            id: 2,
+            image: "src/assets/images/image 28.png",
+            label: "Executive Seat chair",
+            priceCut: 32,
+        },
+    ]
+}
 
 
 const TrendingProducts = ({ title }) => {
+
+    const formatPrice = (value) => `$${value.toFixed(2)}`;
+
     return (
         <section
             className="flex flex-col items-start gap-[40px] mb-[126px]">
@@ -45,7 +71,7 @@ const TrendingProducts = ({ title }) => {
             <div
                 className="
                     flex gap-[30px]">
-                {trendingProducts.map((product) => (
+                {trendingProducts.list1.map((product) => (
                     <TrendingProductsCard
                         key={product.id}
                         product={product}
@@ -110,13 +136,37 @@ const TrendingProducts = ({ title }) => {
                         alt="Clock"
                         className="absolute right-0 bottom-0" />
                 </div>
-                <div
+                <ul
                     className="
+                        w-[268px]
                         flex flex-col gap-[20px]">
-                    <ul>
-
-                    </ul>
-                </div>
+                    {trendingProducts.list2.map((product) => (
+                        <li
+                            key={product.id}
+                            className="
+                                    w-full h-[74px]
+                                    flex flex-row items-start gap-[10px]">
+                            <div
+                                className="
+                                    w-[107px] h-full
+                                    flex items-center justify-center
+                                    bg-[#F5F6F8]">
+                                <img
+                                    src={product.image}
+                                    alt=""
+                                    className="" />
+                            </div>
+                            <div>
+                                <p className="button text-text">
+                                    {product.label}
+                                </p>
+                                <p className="price-cut text-text">
+                                    {formatPrice(product.priceCut)}
+                                </p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
 
         </section>

@@ -96,7 +96,7 @@ body {
   }
 
   .price-cut {
-    @apply text-price-cut leading-none font-primary font-normal not-italic;
+    @apply text-price-cut leading-none font-primary font-normal not-italic line-through;
   }
 
   .caption-title {
