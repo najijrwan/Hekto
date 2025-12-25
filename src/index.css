@@ -100,6 +100,6 @@ body {
   }
 
   .caption-title {
-    @apply text-caption-title leading-none font-primary font-bold not-italic;
+    @apply text-text text-caption-title leading-none font-primary font-bold not-italic;
   }
 }

@@ -1,4 +1,4 @@
-import Button from '@ui/Button.jsx';
+
 
 const UniqueFeatureSofa = ({ title }) => {
     return (
@@ -14,13 +14,13 @@ const UniqueFeatureSofa = ({ title }) => {
                 alt="Featured Sofa"
             />
 
-            <div className="flex flex-col justify-center gap-[13px]">
+            <div className="mt-[82px] flex flex-col justify-start gap-[13px]">
                 <header
                     className="
                         text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic
                         text-text mb-[16px] w-[543px]"
                 >
-                    Unique Features Of leatest & Trending Poducts
+                    {title}
                 </header>
 
                 <div
@@ -55,13 +55,13 @@ const UniqueFeatureSofa = ({ title }) => {
                     <div className="flex flex-col gap-[3px] align-top">
                         <p
                             className="
-                                text-[14px] text-text leading-normal tracking-[0.02em] font-primary font-semibold not-italic"
+                                text-[14px] text-text leading-none tracking-[0.02em] font-primary font-semibold not-italic"
                         >
                             B&B Italian Sofa
                         </p>
                         <p
                             className="
-                                text-[14px] text-text leading-normal font-secondary font-normal">
+                                text-[14px] text-text leading-none font-secondary font-normal">
                             $32.00
                         </p>
                     </div>
