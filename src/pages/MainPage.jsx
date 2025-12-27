@@ -5,6 +5,7 @@ import LatestProducts from "../components/sections/LatestProducts";
 import WhatShopexOffer from "@sections/WhatShopexOffer.jsx";
 import UniqueFeatureSofa from "@sections/UniqueFeatureSofa.jsx";
 import TrendingProducts from "@sections/TrendingProducts.jsx";
+import DiscountItem from "@sections/DiscountItem.jsx";
 
 const MainPage = () => {
     return (
@@ -18,6 +19,7 @@ const MainPage = () => {
             <WhatShopexOffer title = "What Shopex Offer!" />
             <UniqueFeatureSofa title = "Unique Features Of latest & Trending Poducts" />
             <TrendingProducts title = "Trending Products" />
+            <DiscountItem title = "Discount Item" />
             
         </main>
     );

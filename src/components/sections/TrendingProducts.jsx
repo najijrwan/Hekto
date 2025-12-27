@@ -145,7 +145,7 @@ const TrendingProducts = ({ title }) => {
                             key={product.id}
                             className="
                                     w-full h-[74px]
-                                    flex flex-row items-start gap-[10px]">
+                                    flex flex-row items-center gap-[10px]">
                             <div
                                 className="
                                     w-[107px] h-full
