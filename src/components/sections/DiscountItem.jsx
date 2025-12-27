@@ -1,4 +1,13 @@
+import Icon from "@components/Icon.jsx"
 import Button from "@ui/Button.jsx";
+
+const features = [
+    "Material expose like metals",
+    "Clear lines and geometric figures",
+    "Simple neutral colours.",
+    "Material expose like metals",
+];
+
 
 const DiscountItem = ({ title }) => {
     return (
@@ -28,7 +37,7 @@ const DiscountItem = ({ title }) => {
                     <li>Plastic Chair</li>
                     <li>Sofa Colletion</li>
                 </ul>
-                <div className="mt-[111px]">
+                <div className="mt-[111px] max-w-fit">
                     <h1 className="
                         mb-[16px]
                         text-text text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic">
@@ -41,15 +50,32 @@ const DiscountItem = ({ title }) => {
                     </h2>
                     <p
                         className="
-                            w-[523px] mb-[28px]
+                            w-[523px] mb-[28px] align-center
                             text-[#B7BACB] text-[17px] leading-[30px] tracking-[0.02em] font-secondary font-normal"
                     >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.
                     </p>
-                    <ul>
-
+                    <ul className="
+                        grid grid-cols-2 gap-y-[10px]
+                        text-[#B8B8DC] text-[16px] leading-[30px] tracking-[0.02em] font-secondary font-normal"
+                    >
+                        {features.map((item, index) => (
+                            <li
+                                key={index}
+                                className="
+                                w-fit 
+                                flex items-center gap-[3px]"
+                            >
+                                <Icon
+                                    name="Check"
+                                    className="text-[#7569B2] size-fit"
+                                />
+                                <span>{item}</span>
+                            </li>
+                        ))}
                     </ul>
-                    <Button>
+
+                    <Button className="mt-[37px]">
                         Shop Now
                     </Button>
                 </div>

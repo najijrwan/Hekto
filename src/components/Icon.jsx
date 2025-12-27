@@ -6,7 +6,7 @@ const Icon = ({
   gradient,
   className = "",
   strokeWidth = 2,
-  uniqueId, // new prop
+  uniqueId,
 }) => {
   const LucideIcon = LucideIcons[name];
   if (!LucideIcon) return null;
