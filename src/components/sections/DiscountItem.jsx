@@ -4,7 +4,7 @@ const DiscountItem = ({ title }) => {
     return (
         <section
             className="
-                w-[1240px] h-[665px] px-[12.5px]
+                w-[1240px] h-[665px] px-[12.5px] mb-[80px]
                 flex flex-col items-start gap-[33px]"
         >
 
@@ -28,17 +28,22 @@ const DiscountItem = ({ title }) => {
                     <li>Plastic Chair</li>
                     <li>Sofa Colletion</li>
                 </ul>
-                <div>
-                    <h1
-                        className="
-                            text-text text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic"
-                    >
+                <div className="mt-[111px]">
+                    <h1 className="
+                        mb-[16px]
+                        text-text text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic">
                         20% Discount Of All Products
                     </h1>
-                    <h2>
+                    <h2 className="
+                        mb-[20px]
+                        text-pink text-[21px] leading-[1.32] tracking-[0.015em] font-primary font-normal not-italic">
                         Eams Sofa Compact
                     </h2>
-                    <p>
+                    <p
+                        className="
+                            w-[523px] mb-[28px]
+                            text-[#B7BACB] text-[17px] leading-[30px] tracking-[0.02em] font-secondary font-normal"
+                    >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.
                     </p>
                     <ul>
