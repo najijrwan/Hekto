@@ -30,9 +30,10 @@ const topCategories = [
 const TopCategories = ({ title }) => {
     return (
         <section
+            data-title={title}
             className="
-            px-[23px] mb-[15px]
-            flex flex-col items-start gap-[56px]">
+                px-[23px] mb-[125px]
+                flex flex-col items-start gap-[56px]">
 
             <header
                 className="caption-title">
@@ -44,7 +45,7 @@ const TopCategories = ({ title }) => {
                 flex flex-row gap-10"
             >
                 {topCategories.map((product) => (
-                    <TopCategoriesCard 
+                    <TopCategoriesCard
                         key={product.id}
                         product={product}
                     />

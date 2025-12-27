@@ -1,3 +1,5 @@
+import { formatPrice } from "@utils/formatPrice.js";
+
 const TopCategoriesCard = ({ product }) => {
     return (
         <div
@@ -17,12 +19,17 @@ const TopCategoriesCard = ({ product }) => {
                     className="size-[160px]"
                 />
             </div>
+
             <div
-                className="flex flex-col items-center"
+                className="
+                flex flex-col items-center gap-[13px] 
+                leading-none font-primary font-normal not-italic
+                text-text"
             >
-                <p className="">{product.label}</p>
-                <p>{product.price}</p>
+                <p className="text-[20px]">{product.label}</p>
+                <p className="text-[16px]">{formatPrice(product.price)}</p>
             </div>
+
         </div>
     );
 }

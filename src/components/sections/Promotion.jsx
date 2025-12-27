@@ -4,10 +4,12 @@ import { Discount, } from '@/assets/icons/index.js';
 
 const Promotion = () => {
     return (
-        <section className='
-        relative
-        w-full h-[764px]
-        bg-[#F2F0FF] opacity-100'
+        <section
+            data-title="promotion"
+            className='
+                relative
+                w-full h-[764px]
+                bg-[#F2F0FF] opacity-100'
         >
 
             <img

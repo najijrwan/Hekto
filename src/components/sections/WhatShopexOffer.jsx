@@ -29,10 +29,12 @@ const offers = [
 const WhatShopexOffer = ({ title }) => {
     return (
         <section
+            data-title={title}
             className="
                 relative
                 mt-[58px] mb-[130px]
-                flex flex-col items-start gap-[60px]">
+                flex flex-col items-start gap-[60px]"
+        >
 
             <header className="caption-title text-text">
                 {title}

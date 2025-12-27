@@ -60,7 +60,10 @@ const TrendingProducts = ({ title }) => {
 
     return (
         <section
-            className="flex flex-col items-start gap-[40px] mb-[126px]">
+            data-title={title}
+            className="
+                flex flex-col items-start gap-[40px] mb-[126px]"
+        >
 
             <header
                 className="caption-title"

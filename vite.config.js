@@ -23,6 +23,7 @@ export default defineConfig({
             '@product': path.resolve(__dirname, './src/components/ui/product'),
         '@data': path.resolve(__dirname, './src/data'),
         '@pages': path.resolve(__dirname, './src/pages'),
+        '@utils': path.resolve(__dirname, './src/utils'),
     },
   },
 })

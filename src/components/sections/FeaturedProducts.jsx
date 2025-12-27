@@ -36,6 +36,7 @@ const featuredProducts = [
 const FeaturedProducts = ({ title }) => {
     return (
         <section
+            data-title={title}
             className='
                 mt-[290px] 
                 flex flex-col gap-[48px]'

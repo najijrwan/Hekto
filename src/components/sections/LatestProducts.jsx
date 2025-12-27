@@ -91,6 +91,7 @@ const LatestProducts = ({ title }) => {
 
     return (
         <section
+            data-title={title}
             className='
                 mt-[71px]
                 flex flex-col items-center gap-[58px]'

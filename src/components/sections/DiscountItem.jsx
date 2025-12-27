@@ -12,6 +12,7 @@ const features = [
 const DiscountItem = ({ title }) => {
     return (
         <section
+            data-title={title}
             className="
                 w-[1240px] h-[665px] px-[12.5px] mb-[80px]
                 flex flex-col items-start gap-[33px]"

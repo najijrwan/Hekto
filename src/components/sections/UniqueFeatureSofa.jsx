@@ -3,11 +3,12 @@
 const UniqueFeatureSofa = ({ title }) => {
     return (
         <section
+            data-title={title}
             className="
                 w-full h-[579px] py-[15px] px-[435px] mb-[132px]
                 flex
-                bg-[#F1F0FF]">
-
+                bg-[#F1F0FF]"
+        >
 
             <img
                 src="src/assets/images/Group 153.png"
