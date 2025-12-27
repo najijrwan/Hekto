@@ -1,7 +1,6 @@
+import { formatPrice } from "@utils/formatPrice.js";
 
 const TrendingProductsCard = ({ product }) => {
-
-    const formatPrice = (value) => `$${value.toFixed(2)}`;
 
     return (
         <div

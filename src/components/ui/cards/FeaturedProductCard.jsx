@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from '@/components/Icon.jsx'
 import ProductActions from '@/components/ui/product/ProductActions';
+import { formatPrice } from "@utils/formatPrice.js";
 
 const FeaturedProductCard = ({ product, index }) => {
     return (
@@ -80,7 +81,7 @@ const FeaturedProductCard = ({ product, index }) => {
                     className="
                         text-[14px] leading-[17px] 
                         text-text group-hover:text-white">
-                    {product.price}
+                    {formatPrice(product.price)}
                 </p>
 
             </div>

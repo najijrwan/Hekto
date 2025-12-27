@@ -1,4 +1,4 @@
-
+import { formatPrice } from "@utils/formatPrice.js";
 
 const LatestProductsCard = ({ product, index }) => {
     return (
@@ -24,8 +24,8 @@ const LatestProductsCard = ({ product, index }) => {
                     leading-normal font-primary font-normal not-italic"
             >
                 <p className="text-[16px] text-text">{product.label}</p>
-                <p className="text-[14px] text-text ml-auto">{product.discountPrice}</p>
-                <p className="text-[12px] text-red line-through mr-[17px]">{product.price}</p>
+                <p className="text-[14px] text-text ml-auto">{formatPrice(product.discountPrice)}</p>
+                <p className="text-[12px] text-red line-through mr-[17px]">{formatPrice(product.price)}</p>
             </div>
         </li>
     );

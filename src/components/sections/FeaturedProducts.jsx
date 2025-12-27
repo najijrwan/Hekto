@@ -8,28 +8,28 @@ const featuredProducts = [
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y5232010',
-        price: '$42.00',
+        price: 42,
     },
     {
         images: ["src/assets/images/image 1168.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y523201',
-        price: '$42.00',
+        price: 42,
     },
     {
         images: ["src/assets/images/image 1169.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y523202',
-        price: '$42.00',
+        price: 42,
     },
     {
         images: ["src/assets/images/image 3.png", "src/assets/images/image 1.png"],
         label: 'Cantilever chair',
         colors: ['#05E6B7', '#F701A8', '#00009D'],
         code: 'Y523203',
-        price: '$42.00',
+        price: 42,
     },
 ];
 
