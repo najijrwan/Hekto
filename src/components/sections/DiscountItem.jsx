@@ -4,21 +4,35 @@ const DiscountItem = ({ title }) => {
     return (
         <section
             className="
-                w-[1240px] h-[665px] px-[12.5px]"
+                w-[1240px] h-[665px] px-[12.5px]
+                flex flex-col items-start gap-[33px]"
         >
 
-            <header>
+            <header className="caption-title">
                 {title}
             </header>
 
-            <main>
-                <ul>
+            <main
+                className="relative w-full"
+            >
+                <img
+                    src="src/assets/images/Group 154.png"
+                    alt="Sofa"
+                    className="absolute right-0" />
+                <ul
+                    className="
+                        w-100 mx-auto 
+                        flex justify-center items-center gap-[30px]
+                        text-text text-[18px] leading-none font-secondary font-normal">
                     <li>Wood Chair</li>
                     <li>Plastic Chair</li>
                     <li>Sofa Colletion</li>
                 </ul>
                 <div>
-                    <h1>
+                    <h1
+                        className="
+                            text-text text-[35px] leading-[1.32] tracking-[0.015em] font-primary font-bold not-italic"
+                    >
                         20% Discount Of All Products
                     </h1>
                     <h2>
