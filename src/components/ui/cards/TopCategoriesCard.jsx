@@ -1,4 +1,5 @@
 import { formatPrice } from "@utils/formatPrice.js";
+import ViewShopBtn from "@product/ViewShopBtn";
 
 const TopCategoriesCard = ({ product }) => {
     return (
@@ -11,6 +12,7 @@ const TopCategoriesCard = ({ product }) => {
         >
             <div
                 className="
+                relative
                 size-[270px] rounded-full
                 flex items-center justify-center
                 bg-[#F6F7FB] shadow-2 z-20"
@@ -20,6 +22,15 @@ const TopCategoriesCard = ({ product }) => {
                     alt="Chair"
                     className="size-[160px]"
                 />
+                <ViewShopBtn
+                    onClick={() => console.log('Shop now clicked!')}
+                    className='
+                    hidden group-hover:block
+                    absolute right-1/2 translate-x-1/2 bottom-[21px]
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out'
+                >
+                    View Shop
+                </ViewShopBtn>
             </div>
 
             <div
