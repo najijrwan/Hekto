@@ -25,9 +25,8 @@ const TopCategoriesCard = ({ product }) => {
                 <ViewShopBtn
                     onClick={() => console.log('Shop now clicked!')}
                     className='
-                    hidden group-hover:block
                     absolute right-1/2 translate-x-1/2 bottom-[21px]
-                    opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out'
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out'
                 >
                     View Shop
                 </ViewShopBtn>
@@ -37,7 +36,8 @@ const TopCategoriesCard = ({ product }) => {
                 className="
                 absolute top-[6px] right-[5px] 
                 size-[270px] rounded-full 
-                bg-[#9877E7] opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-out z-10"
+                bg-[#9877E7] 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-350 ease-out z-10"
             >
             </div>
 
